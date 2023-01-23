@@ -1,0 +1,19 @@
+h1{
+    color: brown;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+p{
+    color: rgb(29, 0, 63);
+}
+
+h2{
+    color:brown;
+    padding-left: 50px;
+}
+
+.banks{
+   
+    display: flex;
+}

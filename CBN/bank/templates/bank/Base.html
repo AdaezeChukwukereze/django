@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'bank/Main.css' %}">
+</head>
+<body>
+    <div class="banks">
+        <h1>Banks in Nigeria with their logos : 
+            <p>
+              {% for bank in banks %}
+                {{ bank.name }},
+                {{ bank.logo}},
+              {% endfor %}
+            </p>
+        </h1>
+
+         
+        <h2>Customers details:
+            <p>
+              {% for customer in customers %}
+                {{ customer.name }}, 
+                {{ customer.phone_number }},
+                {{ customer.Account_number}}, 
+                {{ customer.bank}},
+              {% endfor %}
+           </p>
+        </h2>
+    
+
+    </div>
+    
+</body>
+</html>
